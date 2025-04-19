@@ -103,25 +103,23 @@ module.exports = class Receive {
     } else {
       response = [
         Response.genText(
-          i18n.__("fallback.any", {
-            message: event.message.text
-          })
+          "Dit me m"
         ),
-        Response.genText(i18n.__("get_started.guidance")),
-        Response.genQuickReply(i18n.__("get_started.help"), [
-          {
-            title: i18n.__("menu.suggestion"),
-            payload: "CURATION"
-          },
-          {
-            title: i18n.__("menu.help"),
-            payload: "CARE_HELP"
-          },
-          {
-            title: i18n.__("menu.product_launch"),
-            payload: "PRODUCT_LAUNCH"
-          }
-        ])
+        // Response.genText(i18n.__("get_started.guidance")),
+        // Response.genQuickReply(i18n.__("get_started.help"), [
+        //   {
+        //     title: i18n.__("menu.suggestion"),
+        //     payload: "CURATION"
+        //   },
+        //   {
+        //     title: i18n.__("menu.help"),
+        //     payload: "CARE_HELP"
+        //   },
+        //   {
+        //     title: i18n.__("menu.product_launch"),
+        //     payload: "PRODUCT_LAUNCH"
+        //   }
+        // ])
       ];
     }
 
